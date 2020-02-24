@@ -5,7 +5,7 @@ pipeline {
       steps {
         withAWS(credentials:'aws-static')
           {
-            s3Upload(file:'index.html', bucket:'ud-devops-project4-bucket1', path:'/')
+            s3Upload(file:'index.html', bucket:'ud-devops-project4-bucket1', path:'')
           }
       }
     }
